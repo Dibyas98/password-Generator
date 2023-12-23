@@ -11,7 +11,7 @@ function App() {
   const [pass,setpass] =useState('')
   const ReciveLength = (arg) =>{
     setlength(arg)
-    console.log(length);
+    // console.log(length);
   }
   const activeCheck = (arg) =>{
     // console.log(arg);   //{includeUpperCase: true, includeLowerCase: true, includeNumbers: true, includeSymbols: true}

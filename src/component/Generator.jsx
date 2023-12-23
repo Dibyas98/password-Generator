@@ -7,6 +7,7 @@ export default function Generator(props) {
     // }
     const lengthChange = (e) =>{
         setlength(e.target.value)
+        console.log(length);
         props.len(length)
     }
   return (
@@ -15,7 +16,7 @@ export default function Generator(props) {
       <input type="text" name="" id="" />
         <div className='flex justify-between'>
         <p>Select Password Length <span className='font-semibold'>(**8-50 characters**)</span></p>
-      <input type="number" name="" id="" className='border-2' value={length} min={8}  onChange={lengthChange}/>
+      <input type="number" name="" id="" className='border-2' value={length} min={8}  onChange={lengthChange} onKeyUp={lengthChange}/>
         </div>
 
     </div>
